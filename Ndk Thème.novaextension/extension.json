@@ -1,8 +1,11 @@
 {
-  "identifier": "org.NdkThme",
+  "identifier": "Kellian.kellian",
   "name": "Ndk Thème",
-  "organization": "NdkDesign",
+  "organization": "kellian",
   "description": "Dracula theme based on with new SQL NOVA features",
   "version": "1.0",
-  "categories": ["themes"]
+  "categories": ["themes"],
+  "repository": "https://github.com/kellian84/ndk_theme",
+  "bugs": "https://github.com/kellian84/ndk_theme/issues",
+  "mailto:": "contact@kln-web.fr"
 }
