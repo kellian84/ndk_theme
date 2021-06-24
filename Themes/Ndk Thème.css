@@ -1,0 +1,687 @@
+meta {
+  -theme-display-name: NDK Theme;
+  -theme-interface-style: dark;
+  -theme-accent-color: auto;
+}
+meta.window {
+  background-color: #21222c;
+  border-color: #44475a;
+}
+meta.titlebar {
+  color: #f8f8f2;
+  background-color: #111318;
+  border-color: #44475a;
+}
+meta.titlebar.inactive {
+  background-color: #21222c;
+}
+meta.button {
+  background: linear-gradient(#4e5257, #3c3f42);
+  border: linear-gradient(#292c2e, #222426);
+  color: white;
+}
+meta.button.highlighted {
+  background: linear-gradient(#656b70, #53575c);
+  color: white;
+}
+meta.button.selected {
+  color: white;
+}
+meta.button.highlighted.selected {
+  color: white;
+}
+meta.button.disabled {
+  background: linear-gradient(#4e5257, #3c3f42);
+  border: linear-gradient(#292c2e, #222426);
+  color: #666666;
+}
+meta.textfield {
+  background-color: #202224;
+  border-color: #44475a;
+}
+/* Resting */
+meta.button,
+meta.document.button {
+  background: #e57a1c;
+  border: 1px solid #101010;
+  color: white;
+}
+
+/* Pressed */
+meta.button.highlighted,
+meta.document.button.highlighted {
+  background: #732103;
+}
+
+/* Active */
+meta.button.selected {
+  background: linear-gradient(#e57a1c, #e57a1c);
+  color: hsl(0, 0%, 100%);
+}
+
+/* Highlight pressed */
+meta.button.highlighted.selected {
+  color: #e57a1c;
+}
+
+/* Disabled */
+meta.button.disabled,
+meta.document.button.disabled {
+  border: #45444c;
+  color: #45444c;
+}
+
+/*********************
+    * Textfields
+    *********************/
+
+meta.textfield,
+meta.document.textfield {
+  background: #17182c;
+  border-color: transparent;
+}
+
+/*********************
+    * Editor
+    *********************/
+
+/* Text */
+meta.text {
+  color: #cccccc;
+}
+meta.text.invisible {
+  color: #5f5d5d;
+}
+meta.text.selected {
+  color: #556231;
+  background: rgba(130, 130, 190, 0.25);
+}
+
+/* Line Highlight */
+meta.cursor {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Indentation Guides */
+meta.indentguide {
+  border-color: #5f5d5d;
+}
+
+/* Gutter */
+meta.gutter {
+  color: #5f5d5d;
+}
+meta.gutter.selected {
+  color: rgba(145, 176, 145, 1);
+  background-color: rgba(130, 130, 190, 0.25);
+}
+
+/*********************
+    * MISC
+    *********************/
+
+keyword {
+  color: #ff3e6d;
+}
+
+processing {
+  color: #f9c74f;
+}
+
+invalid {
+  background-color: #ff3e6d;
+}
+
+declaration {
+  color: #ff8563;
+}
+
+bracket {
+  color: #69ebd9;
+}
+
+operator {
+  color: #69ebd9;
+}
+
+/*********************
+    * Identifiers
+    *********************/
+
+identifier.type {
+  font-weight: bold;
+}
+identifier.type.class {
+  color: #549093;
+}
+identifier.type.null {
+  color: #ff8563;
+}
+identifier.type.value.null {
+  color: #ff8563;
+}
+identifier.global {
+  color: #d18ff0;
+}
+identifier.constant {
+  color: #eaffff;
+}
+identifier.variable {
+  color: #eaffff;
+}
+identifier.decorator {
+  color: #69ebd9;
+}
+identifier.property {
+  color: #77abff;
+}
+identifier.function,
+identifier.core.function,
+definition.function,
+identifier.method,
+definition.method {
+  color: #77abff;
+}
+identifier.argument {
+  color: #ff8563;
+}
+
+/*********************
+    * Strings
+    *********************/
+string {
+  color: #99c27c;
+}
+string.key {
+  color: white;
+}
+string-template.value {
+  color: #ff3e6d;
+}
+
+/*********************
+    * Values
+    *********************/
+value.boolean {
+  color: #ff8563;
+}
+
+value.null {
+  color: #ff8563;
+}
+
+value.number {
+  color: #ff8563;
+}
+
+value.entity {
+  color: #ff3e6d;
+}
+
+value.symbol {
+  color: #ff3e6d;
+}
+
+comment {
+  color: #5f5d5d;
+  font-style: italic;
+}
+
+/*********************
+    * advanced PHP
+    *********************/
+
+/* Statics */
+advphp.static.condition {
+  /* if, else, elseif, foreach, ... */
+  color: #ff3e6d;
+  font-style: italic;
+}
+advphp.static.processor {
+  /* echo, return, print, ... */
+  color: #f9c74f;
+}
+advphp.static.declaration {
+  /* new, public, private, ... */
+  color: #ff8563;
+  font-style: italic;
+}
+advphp.static.import {
+  /* include, require, ... */
+  color: #6ae0ff;
+}
+advphp.static.constant {
+  /* __DIR__, __METHOD__, ... */
+  color: #d18ff0;
+}
+advphp.static.wordOperator {
+  /* AND, OR, XOR, ... */
+  color: #69ebd9;
+}
+
+/* WP Constants */
+advphp.wp.keywords {
+  color: #f9c74f;
+}
+
+/* CURL */
+advphp.curl.keywords {
+  color: #f9c74f;
+}
+
+/* SQL */
+advphp.sql.keywords {
+  color: #f9c74f;
+}
+
+/* Syntax */
+advphp.operator {
+  color: #69ebd9;
+}
+advphp.bracket {
+  color: #69ebd9;
+}
+advphp.delimiter {
+  color: #69ebd9;
+}
+advphp.semicolon {
+  color: #ff6774;
+}
+
+/* Variables */
+advphp.identifier.variable.prefix {
+  color: #69ebd9;
+}
+advphp.identifier.variable.name {
+  color: #eaffff;
+  /* text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25); */
+}
+advphp.identifier.variable.this {
+  color: #ff6774;
+}
+advphp.string.variableSubstitution {
+  color: #77abff;
+}
+
+/* Functions */
+advphp.identifier.function.keyword {
+  color: #f9c74f;
+}
+advphp.identifier.function.name {
+  color: #77abff;
+}
+advphp.string.block.delimiter {
+  background-color: #69ebd9;
+}
+advphp.identifier.parameter.prefix {
+  color: #69ebd9;
+}
+advphp.identifier.parameter.name {
+  color: #b9e981;
+}
+
+/* Objects */
+advphp.identifier.object.name {
+  color: #d18ff0;
+}
+
+/* Namespace */
+advphp.definition.namespace {
+  color: #d18ff0;
+}
+
+/* Strings */
+advphp.string,
+advphp.value.string,
+advphp.string.doubleQuote,
+advphp.string.singleQuote,
+advphp.string.nowdoc,
+advphp.string.heredoc {
+  color: #abb2bf;
+}
+advphp.backTic.string {
+  color: #ff8563;
+  font-style: italic;
+}
+
+/*********************
+    * PHP
+    *********************/
+php.comment.single,
+php.comment.block {
+  color: #5f5d5d;
+  font-style: italic;
+}
+
+php.bracket,
+php.string.nowdoc.delimiter,
+php.string.nowdoc.identifier,
+php.string.heredoc.delimiter,
+php.string.heredoc.identifier,
+php.string.double-quoted.delimiter,
+php.string.single-quoted.delimiter,
+php.string.backtick.delimiter {
+  color: #69ebd9;
+}
+
+php.string.escape,
+php.string.backtick.escape {
+  color: #f9c74f;
+}
+php.separator {
+  color: #69ebd9;
+}
+php.operator {
+  color: #69ebd9;
+}
+
+php.keyword.construct {
+  color: #f9c74f;
+}
+php.keyword.condition {
+  color: #ff3e6d;
+  font-style: italic;
+}
+php.keyword.modifier {
+  color: #69ebd9;
+}
+php.keyword.statement {
+  color: #69ebd9;
+}
+php.keyword.operator {
+  color: #69ebd9;
+}
+
+php.type.identifier.name {
+  color: #d18ff0;
+  font-weight: normal;
+}
+
+php.definition.identifier.method.name,
+php.definition.identifier.function.name {
+  color: #77abff;
+}
+php.definition.identifier.constant {
+  color: #d18ff0;
+}
+php.definition.property.identifier.prefix {
+  color: #69ebd9;
+}
+php.definition.property.identifier.name {
+  color: #eaffff;
+}
+php.definition.property.semicolon {
+  color: #ff6774;
+}
+
+php.identifier.argument.name {
+  color: #b9e981;
+}
+php.identifier.argument.prefix {
+  color: #69ebd9;
+}
+
+php.insteadof.type.identifier.name,
+php.as.type.identifier.name {
+  color: #d18ff0;
+}
+php.insteadof.operator.static,
+php.as.operator.static {
+  color: #69ebd9;
+}
+php.insteadof.method.identifier.name,
+php.as.method.identifier.name {
+  color: #77abff;
+}
+
+php.keyword.self {
+  color: #ff6774;
+}
+php.keyword.self.prefix {
+  color: #69ebd9;
+}
+php.identifier.variable.name {
+  color: #eaffff;
+}
+php.identifier.variable.prefix {
+  color: #69ebd9;
+}
+
+php.value.null,
+php.value.boolean,
+php.value.number.binary,
+php.value.number.octal,
+php.value.number.hexadecimal,
+php.value.number.decimal {
+  color: #ff8563;
+}
+
+php.identifier.constant {
+  color: #d18ff0;
+}
+
+php.curl.string-keyword,
+php.sql.string-keyword {
+  color: #f9c74f;
+}
+
+/*********************
+    * Regex
+    *********************/
+
+regex {
+  color: #ffee57;
+}
+
+regex.escaped {
+  color: #ffee57;
+}
+
+cdata {
+  color: #ffee57;
+}
+
+/*********************
+    * Tags
+    *********************/
+
+tag {
+  color: #ffffff;
+}
+tag.framework {
+  color: #99c27c; /* quotes */
+}
+tag.attribute.value {
+  color: #b9e981;
+}
+tag.attribute.name {
+  color: #ffc957;
+}
+
+/* HTML */
+html.tag {
+  color: #99c27c; /* < > */
+}
+html.tag.name {
+  color: #ff6774; /* <meta> <br> */
+}
+html.tag.attribute.name {
+  color: #ffc957;
+  font-style: italic;
+}
+
+/* XML */
+xml.tag {
+  color: #ff6774;
+}
+xml.tag.name {
+}
+xml.tag.attribute.name {
+  color: #ffc957;
+  font-style: italic;
+}
+xml.tag.attribute.value {
+  color: #b9e981;
+}
+
+/*********************
+    * Styles
+    *********************/
+
+style.at {
+  color: #77abff;
+  font-style: italic;
+}
+
+style.selector.element {
+  color: #b9e981;
+}
+
+style.selector.identifier.id {
+  color: #d18ff0;
+}
+
+style.selector.identifier.class {
+  color: #ffc957;
+}
+
+style.selector.pseudoclass {
+  color: #cccccc;
+}
+
+style.selector.pseudoelement {
+  color: #d18ff0;
+}
+
+style.attribute.name {
+  color: #abb2bf;
+}
+
+style.value.number {
+  color: #ff3e6d;
+}
+
+style.value.color.hex {
+  color: #69ebd9;
+}
+
+style.value.keyword {
+  color: #ff8563;
+}
+
+style.value.color.named {
+  color: #69ebd9;
+}
+
+/*********************
+    * Terminal
+    *********************/
+terminal.black,
+terminal.bright-black {
+  color: #17182c;
+}
+terminal.red,
+terminal.bright-red {
+  color: #ff3e6d;
+}
+terminal.green,
+terminal.bright-green {
+  color: #b9e981;
+}
+terminal.yellow,
+terminal.bright-yellow {
+  color: #ffc957;
+}
+terminal.blue,
+terminal.bright-blue {
+  color: #77abff;
+}
+terminal.magenta,
+terminal.bright-magenta {
+  color: #d18ff0;
+}
+terminal.cyan,
+terminal.bright-cyan {
+  color: #69ebd9;
+}
+terminal.white,
+terminal.bright-white {
+  color: #cccccc;
+}
+
+/*********************
+    * JavaScript
+    *********************/
+/* Keywords */
+javascript.keyword {
+  color: #d18ff0;
+}
+
+javascript.keyword.class {
+  color: #ff8563;
+  font-style: italic;
+}
+
+javascript.keyword.extends {
+  color: #ffc957;
+}
+javascript.identifier.type.class.name,
+javascript.identifier.type.class.superclass {
+  color: #d18ff0;
+  font-weight: normal;
+}
+
+/* Identifiers */
+javascript.identifier.method,
+javascript.identifier.function,
+javascript.identifier.function.name {
+  color: #77abff;
+}
+javascript.identifier.argument.name {
+  color: #ff8563;
+  font-style: italic;
+}
+javascript.identifier,
+javascript.identifier.name {
+  color: #ffffff;
+}
+javascript.identifier.property {
+  color: #b9e981;
+}
+javascript.identifier.constant {
+  color: #ffc957;
+}
+javascript.identifier.core.global {
+  color: #ffc957;
+}
+javascript.identifier.core.function {
+  color: #ffc957;
+  font-style: italic;
+}
+
+/* Values */
+javascript.value.null,
+javascript.value.boolean,
+javascript.value.number.hex,
+javascript.value.number {
+  color: #ff8563;
+}
+
+/* Strings */
+javascript.string.backtick-quoted,
+javascript.string.double-quoted,
+javascript.string.single-quoted {
+  color: #abb2bf;
+}
+javascript.string.regex {
+  color: #ffc957;
+}
+
+/* Operators */
+javascript.operator,
+javascript.bracket,
+javascript.comma,
+javascript.semicolon,
+javascript.separator {
+  color: #69ebd9;
+}
